@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AspNetCore.Mvc.Controllers
+namespace AspNetCore.Mvc.Models
 {
     public class MovieContext : DbContext
     {
