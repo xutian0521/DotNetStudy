@@ -27,8 +27,8 @@ namespace AspNetCore.Mvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MovieContext>(options =>
-    options.UseSqlServer(Configuration.GetConnectionString("MovieContext"))
-    );
+                options.UseSqlServer(Configuration.GetConnectionString("MovieContext"))
+                );
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
