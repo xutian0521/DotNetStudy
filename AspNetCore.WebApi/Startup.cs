@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetCore.WebApi.Models;
+using Exceptionless;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -51,6 +52,7 @@ namespace AspNetCore.WebApi
             }
 
             app.UseMvc();
+            app.UseExceptionless(Configuration);
         }
     }
 }

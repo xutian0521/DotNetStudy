@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Exceptionless.Logging;
+using Exceptionless;
 
 namespace AspNetCore.WebApi.Controllers
 {
@@ -14,6 +16,7 @@ namespace AspNetCore.WebApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            Exceptionless.ExceptionlessClient.Default.CreateLog("GET", "api/values", LogLevel.Debug).AddTags("CoreApi").Submit();
             return new string[] { "value1", "value2" };
         }
 
@@ -21,6 +24,7 @@ namespace AspNetCore.WebApi.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
+            Exceptionless.ExceptionlessClient.Default.CreateLog("GET", "api/values/5", LogLevel.Warn).AddTags("CoreApi").Submit();
             return "value";
         }
 
