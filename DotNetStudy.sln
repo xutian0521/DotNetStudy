@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.WebApi", "AspNetCore.WebApi\AspNetCore.WebApi.csproj", "{AA97FEF2-5E9A-4824-BA3B-59034C745142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.WebApi", "AspNetCore.WebApi\AspNetCore.WebApi.csproj", "{AA97FEF2-5E9A-4824-BA3B-59034C745142}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Mvc", "AspNetCore.Mvc\AspNetCore.Mvc.csproj", "{E5FB844E-26F1-48E7-BED8-7132B9152941}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Mvc", "AspNetCore.Mvc\AspNetCore.Mvc.csproj", "{E5FB844E-26F1-48E7-BED8-7132B9152941}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.RazorPage", "AspNetCore.RazorPage\AspNetCore.RazorPage.csproj", "{1C57E976-E872-497D-887A-A7EA71D981F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.RazorPage", "AspNetCore.RazorPage\AspNetCore.RazorPage.csproj", "{1C57E976-E872-497D-887A-A7EA71D981F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.Console", "DotNetCore.Console\DotNetCore.Console.csproj", "{9986EE7C-B5FC-4C12-B402-F419C0F63974}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.Console", "DotNetCore.Console\DotNetCore.Console.csproj", "{9986EE7C-B5FC-4C12-B402-F419C0F63974}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedistInsertTest", "RedistInsertTest\RedistInsertTest.csproj", "{4F92DB21-A69D-4F02-B0EF-41A24CFCC5B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConcurrency", "TestConcurrency\TestConcurrency.csproj", "{7B8D22AD-42B4-4C35-89CC-687D82676782}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{9986EE7C-B5FC-4C12-B402-F419C0F63974}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9986EE7C-B5FC-4C12-B402-F419C0F63974}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9986EE7C-B5FC-4C12-B402-F419C0F63974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F92DB21-A69D-4F02-B0EF-41A24CFCC5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F92DB21-A69D-4F02-B0EF-41A24CFCC5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F92DB21-A69D-4F02-B0EF-41A24CFCC5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F92DB21-A69D-4F02-B0EF-41A24CFCC5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B8D22AD-42B4-4C35-89CC-687D82676782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B8D22AD-42B4-4C35-89CC-687D82676782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B8D22AD-42B4-4C35-89CC-687D82676782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B8D22AD-42B4-4C35-89CC-687D82676782}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
