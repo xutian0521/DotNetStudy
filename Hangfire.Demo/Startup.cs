@@ -32,6 +32,7 @@ namespace Hangfire.Demo
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddHangfire(x => x.UseSqlServerStorage(Configuration.GetSection("ConnectionString").Value ));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +49,8 @@ namespace Hangfire.Demo
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseHangfireServer();
+            app.UseHangfireDashboard();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
