@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hangfire.MySql.Core;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,6 +34,9 @@ namespace Hangfire.Demo
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             //services.AddHangfire(x => x.UseSqlServerStorage(Configuration.GetSection("ConnectionString").Value ));
+
+            GlobalConfiguration.Configuration.UseStorage(
+                new MySqlStorage(Configuration.GetSection("ConnectionString").Value));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
